@@ -260,7 +260,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.work-title {
+.work__title {
   width: 352px;
   font-weight: 700;
   font-size: 36px;
@@ -270,17 +270,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-almost-black);
   display: flex;
+  margin-bottom: 50px;
 }
-.work ul {
+.work__list {
   list-style: none;
   padding: 0;
   display: flex;
-}
-.work ul li {
-  margin-top: 50px;
-}
-.computer {
-  float: left;
+  gap: 30px;
 }
 /*start label*/
 .label {
@@ -294,15 +290,15 @@ body {
   white-space: nowrap;
   top: 1445px;
 }
-.label-phone {
+.label__phone {
   left: 600px;
 }
-.label-graphic {
+.label__graphic {
   left: 1000px;
 }
-.label-computer p,
-.label-phone p,
-.label-graphic p {
+.label__computer p,
+.label__phone p,
+.label__graphic p {
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
@@ -313,11 +309,6 @@ body {
   letter-spacing: 0.03em;
   width: 190px;
 }
-.phone,
-.tablet {
-  float: left;
-  margin-left: 30px;
-}
 /*finish label*/
 /*finish work*/
 .our-team {
@@ -327,7 +318,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.block-title {
+.our-team__title {
   width: 210px;
   padding-left: 480px;
   font-weight: 700;
@@ -338,12 +329,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-almost-black);
 }
-.our-team ul {
+.our-team__list {
   width: 1170px;
   list-style: none;
   margin-top: 50px;
+  display: flex;
+  gap: 30px;
 }
-.our-team ul li {
+.our-team__item{
   width: 270px;
   float: left;
   text-align: center;
@@ -352,11 +345,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  gap: 30px;
 }
-.team {
-  margin-left: 30px;
-}
-.name {
+.our-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -364,7 +355,7 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.job {
+.our-team__job {
   width: 130px;
   font-size: 16px;
   line-height: 1.19;
@@ -378,7 +369,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.social-media-icons {
+.social-media__icons {
   width: 44px;
   min-height: 44px;
   display: flex;
@@ -387,13 +378,8 @@ body {
   border-radius: 50%;
   fill: var(--color-icons-social-media);
 }
-.social-media-icons svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-media-icons:hover,
-.social-media-icons:focus {
+.social-media__icons:hover,
+.social-media__icons:focus {
   background-color: var(--color-blue);
   fill: var(--color-background);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
