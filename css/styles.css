@@ -40,11 +40,11 @@ body {
   justify-content: start;
   margin-left: 200px;
 }
-.principal {
+.container__principal {
   flex-direction: row;
   max-height: 80px;
 }
-.logo {
+.menu__logo {
   width: 145px;
   font-weight: 700;
   font-size: 26px;
@@ -56,7 +56,7 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.web {
+.logo__web {
   color: var(--color-blue);
 }
 .navigation {
@@ -64,30 +64,31 @@ body {
   margin-top: 32px;
   margin-left: 93px;
 }
-.navigation ul {
+.navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.navigation ul li a {
+.navigation__list-items {
   float: left;
   color: var(--color-almost-black);
 }
-.navigation ul li a:focus,
-.navigation ul li a:hover,
-.navigation ul li a:active {
+.navigation__list-items:focus,
+.navigation__list-items:hover,
+.navigation__list-items:active {
   color: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.agency {
+.navigation__list-items-agency {
   width: 53px;
   font-weight: 500;
   text-decoration: none;
 }
-.agency.agency-active {
+.navigation__list-items-agency
+.navigation__list-items-agency-active {
   color: var(--color-blue);
 }
-.agency-active::after {
+.navigation__list-items-agency-active::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -97,14 +98,15 @@ body {
   background: var(--color-blue);
   border-radius: 2px;
 }
-.portfolio {
+.navigation__list-items-portfolio {
   padding-left: 46px;
   text-decoration: none;
 }
-.portfolio.portfolio-active {
+.navigation__list-items-portfolio
+.navigation__list-items-portfolio-active {
   color: var(--color-blue);
 }
-.portfolio-active::after {
+.navigation__list-items-portfolio-active::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -114,13 +116,13 @@ body {
   background: var(--color-blue);
   border-radius: 2px;
 }
-.contact {
+.navigation__list-items-contact {
   padding-left: 46px;
   width: 51px;
   text-decoration: none;
 }
 /*finish navigation*/
-.email {
+.menu_email {
   width: 161px;
   color: var(--color-grey);
   text-decoration: none;
@@ -128,30 +130,28 @@ body {
   margin-left: 345px;
   align-items: center;
 }
-.email:hover,
-.email:focus {
+.menu_email:hover,
+.menu_email:focus {
   color: var(--color-blue);
   fill: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.envelope {
+.menu_envelope {
   margin-right: 10px;
 }
-.telephone {
+.menu_telephone {
   width: 130px;
   color: var(--color-grey);
   text-decoration: none;
-}
-.telephone {
   display: flex;
   margin-left: 30px;
   align-items: center;
 }
-.smartphone {
+.menu_smartphone {
   margin-right: 10px;
 }
-.telephone:hover,
-.telephone:focus {
+.menu_telephone:hover,
+.menu_telephone:focus {
   color: var(--color-blue);
   fill: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
