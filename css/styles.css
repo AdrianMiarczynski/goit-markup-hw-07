@@ -459,17 +459,17 @@ body {
   white-space: nowrap;
   text-decoration: none;
 }
-.footer-icons-media {
+.footer__icons-media {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
   width: 206px;
   margin-top: 72px;
 }
-.footer-icons-media .social-media {
+.social-media {
   margin: 20px 0 0 0;
 }
-.footer-icons-media h3 {
+.footer__icons-header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -477,15 +477,15 @@ body {
   text-transform: uppercase;
   color: var(--color-background);
 }
-.footer-icons-media a {
+.social-media__icons--color {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--color-background);
 }
-.footer .signup-form {
+.signup-form {
   display: flex;
   margin-left: 78px;
 }
-.footer .signup-form label {
+.signup-form__label {
   display: flex;
   flex-direction: column;
   margin-top: 72px;
@@ -497,7 +497,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
-.footer .signup-form label input {
+.signup-form__input {
   min-width: 378px;
   min-height: 50px;
   margin-top: 20px;
@@ -511,7 +511,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
 }
-.footer .signup-form button {
+.signup-form__button {
   margin: 108px 215px 94px 12px;
   min-height: 50px;
   min-width: 200px;
@@ -530,7 +530,7 @@ body {
   border: none;
   cursor: pointer;
 }
-.footer .signup-form button svg {
+.signup-form__icon {
   margin-left: 24px;
 }
 /*finish footer*/
