@@ -216,7 +216,7 @@ body {
   box-sizing: content-box;
   padding-bottom: 0;
 }
-.attributes ul {
+.attributes__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -225,7 +225,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-.attributes ul li .wrapper {
+.attributes__wrapper {
   display: flex;
   width: 270px;
   max-height: 120px;
@@ -234,22 +234,20 @@ body {
   margin-bottom: 30px;
   justify-content: center;
 }
-.wrapper svg {
+.attributes__icons{
   padding-left: 100px;
 }
-.attributes ul li {
+.attributes__list-item {
   width: 270px;
 }
-.attributes-text {
+.attributes_text {
   text-transform: uppercase;
   color: var(--color-almost-black);
   line-height: 1.71;
   font-weight: 700;
-}
-.attributes ul li .attributes-text {
   line-height: 1.46;
 }
-.attributes ul li p {
+.attributes__paragraph{
   padding-top: 10px;
   margin-bottom: 0;
 }
