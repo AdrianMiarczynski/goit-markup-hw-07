@@ -69,26 +69,26 @@ body {
   margin: 0;
   padding: 0;
 }
-.navigation__list-items {
+.navigation__link {
   float: left;
   color: var(--color-almost-black);
 }
-.navigation__list-items:focus,
-.navigation__list-items:hover,
-.navigation__list-items:active {
+.navigation__link:focus,
+.navigation__link:hover,
+.navigation__link:active {
   color: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__list-items-agency {
+.navigation__link-agency {
   width: 53px;
   font-weight: 500;
   text-decoration: none;
 }
-.navigation__list-items-agency
-.navigation__list-items-agency-active {
+.navigation__link-agency
+.navigation__link-agency-active {
   color: var(--color-blue);
 }
-.navigation__list-items-agency-active::after {
+.navigation__link-agency-active::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -98,15 +98,15 @@ body {
   background: var(--color-blue);
   border-radius: 2px;
 }
-.navigation__list-items-portfolio {
+.navigation__link-portfolio {
   padding-left: 46px;
   text-decoration: none;
 }
-.navigation__list-items-portfolio
-.navigation__list-items-portfolio-active {
+.navigation__link-portfolio
+.navigation__link-portfolio-active {
   color: var(--color-blue);
 }
-.navigation__list-items-portfolio-active::after {
+.navigation__link-portfolio-active::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -116,7 +116,7 @@ body {
   background: var(--color-blue);
   border-radius: 2px;
 }
-.navigation__list-items-contact {
+.navigation__link-contact {
   padding-left: 46px;
   width: 51px;
   text-decoration: none;
@@ -136,7 +136,7 @@ body {
   fill: var(--color-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu_envelope {
+.menu_icon-envelope {
   margin-right: 10px;
 }
 .menu_telephone {
@@ -147,7 +147,7 @@ body {
   margin-left: 30px;
   align-items: center;
 }
-.menu_smartphone {
+.menu_icon-smartphone {
   margin-right: 10px;
 }
 .menu_telephone:hover,
