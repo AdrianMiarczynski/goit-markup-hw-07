@@ -677,7 +677,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -694,7 +694,7 @@ body {
   pointer-events: none;
   transition: 1s;
 }
-.data-form {
+.modal__data-form {
   margin: 40px 40px 12px;
   font-size: 20px;
   font-weight: 1.15;
@@ -715,9 +715,7 @@ body {
   flex-direction: column;
 }
 
-.modal-form .user-input,
-.modal-form .telephone-input,
-.modal-form .email-input {
+.modal-form__input{
   min-width: 448px;
   color: var(--color-almost-black);
   border: 1px solid var(--color-modal-input);
@@ -729,10 +727,10 @@ body {
   padding-left: 42px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form label:focus-within,
-.modal-form label:focus,
-.modal-form label:hover,
-.modal-form label:active {
+.modal-form__label:focus-within,
+.modal-form__label:focus,
+.modal-form__label:hover,
+.modal-form__label:active {
   fill: var(--color-blue);
 }
 .modal-form input:focus,
@@ -741,18 +739,17 @@ body {
   border: 1px solid var(--color-blue);
   outline: none;
 }
-.modal-form label,
-.modal-form .user-input input {
+.modal-form__label {
   position: relative;
 }
-.modal-form .form-icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   top: 30px;
   justify-content: center;
   text-align: center;
 }
-.modal-text-area {
+.modal-form__text-area {
   margin-bottom: 20px;
   resize: none;
   max-width: 448px;
@@ -766,17 +763,22 @@ body {
   letter-spacing: 0.01em;
   font-weight: 400;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*color: var(--color-text-area);
-  opacity: 0,12; */
 }
-.modal-text-area:hover,
-.modal-text-area:active,
-.modal-text-area:focus {
+.modal-form__text-area:hover,
+.modal-form__text-area:active,
+.modal-form__text-area:focus {
   border: 1px solid var(--color-blue);
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-agreement span {
+.checkbox-agreement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.checkbox-agreement__border-checkbox {
   top: 0px;
   left: -21px;
   height: 15px;
@@ -788,91 +790,36 @@ body {
   border: 1px solid var(--color-black);
   border-radius: 2px;
 }
-.checkbox-agreement span svg {
+.checkbox-agreement__icon {
   opacity: 0;
   min-height: 15px;
   min-width: 16px;
 }
-.checkbox-agreement {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.agreement-label {
+.checkbox-agreement__label {
   position: relative;
   cursor: pointer;
 }
-/* .agreement-label::before
-{
-  content: '';
-  min-width: 15px;
-  min-height: 15px;
-  border: 2px solid green;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  top: 20px;
-} */
-#agreement {
+.checkbox-agreement__input{
   min-width: 15px;
   min-height: 15px;
   max-width: 1px;
   margin-right: 8px;
-  /* appearance: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  overflow: hidden; */
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
-#agreement:checked + .agreement-label > span {
+.checkbox-agreement__input:checked + .checkbox-agreement__label > .checkbox-agreement__border-checkbox {
   fill: var(--color-background);
   background-color: var(--color-blue);
   border-color: var(--color-blue);
   opacity: 1;
 }
-#agreement:checked + .agreement-label > span svg {
+.checkbox-agreement__input:checked + .checkbox-agreement__label > .checkbox-agreement__border-checkbox .checkbox-agreement__icon {
   opacity: 1;
 }
-/* .border-checkbox
-{
-  min-width: 16px; 
-  min-height: 15px;
-  border: 1px solid;            border do checkboxa
-  position: absolute;
-  left: -24px;
-  top: 1px;
-} */
-/* #agreement::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--color-almost-black);
-  border-radius: 2px;
-}
-#agreement:active::before,
-#agreement:focus::before,
-#agreement:hover::before {
-  border-color: var(--color-blue);
-}
-#agreement:checked:before {
-  background: var(--color-blue);
-  border-color: var(--color-blue);
-  fill: var(--color-background);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url('../images/icons.svg#icon-checkmark');
-} */
-.checkbox-agreement a {
+.checkbox-agreement__link {
   color: var(--color-blue);
 }
-.modal-form .modal-button {
+.modal-form__button {
   min-height: 50px;
   min-width: 200px;
   margin: 30px 124px 40px;
