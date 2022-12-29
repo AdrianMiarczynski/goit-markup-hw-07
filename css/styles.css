@@ -40,7 +40,7 @@ body {
   justify-content: start;
   margin-left: 200px;
 }
-.container__principal {
+.container--principal {
   flex-direction: row;
   max-height: 80px;
 }

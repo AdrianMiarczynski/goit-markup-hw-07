@@ -1,0 +1,14 @@
+@use './utils/vars' as *;
+@import './components/navigation';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 1600px;
+  background: $color-background;
+  font-family: 'Roboto', sans-serif;
+  color: $color-grey;
+}
