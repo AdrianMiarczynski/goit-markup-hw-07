@@ -19,7 +19,7 @@ body {
   display: flex;
   border-bottom: 1px solid $color-border-menu;
 
-  &__email{
+  &__email {
     width: 161px;
     text-decoration: none;
     display: flex;
@@ -28,16 +28,16 @@ body {
     color: $color-grey;
 
     &:hover,
-    &:focus{
-        color: $color-blue;
-        fill: $color-blue;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      color: $color-blue;
+      fill: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  &__icon-envelope{
+  &__icon-envelope {
     margin-right: 10px;
   }
-  &__telephone{
+  &__telephone {
     width: 130px;
     color: $color-grey;
     text-decoration: none;
@@ -46,13 +46,13 @@ body {
     align-items: center;
 
     &:hover,
-    &:focus{
-        color: $color-blue;
-        fill: $color-blue;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      color: $color-blue;
+      fill: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  &__icon-smartphone{
+  &__icon-smartphone {
     margin-right: 10px;
   }
 }
@@ -69,82 +69,468 @@ body {
   }
 }
 .menu__logo {
+  width: 145px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: $color-black;
+  text-decoration: none;
+  font-family: $font-menu;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo__web {
+  color: $color-blue;
+}
+.navigation {
+  width: 254px;
+  margin-top: 32px;
+  margin-left: 93px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    float: left;
+    color: $color-almost-black;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__link-agency {
+    width: 53px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__link-agency--active {
+    color: $color-blue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 53px;
+      top: 76px;
+      left: 437px;
+      border-radius: 2px;
+      background-color: $color-blue;
+    }
+  }
+  &__link-portfolio {
+    padding-left: 46px;
+    text-decoration: none;
+  }
+  &__link-portfolio--active {
+    color: $color-blue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 53px;
+      top: 76px;
+      left: 537px;
+      background: var(--color-blue);
+      border-radius: 2px;
+    }
+  }
+  &__link-contact {
+    padding-left: 46px;
+    width: 51px;
+    text-decoration: none;
+  }
+}
+//finish menu//
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header {
+  margin-left: -200px;
+  width: 1600px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+    url(../images/overlay.png);
+  background-size: contain;
+}
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 116px;
+
+  &__main-header {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: $color-background;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    width: 200px;
+    padding: 10px 0;
+    background: $color-blue;
+    box-shadow: 0px 4px 4px $color-button-box-shadow;
+    border: $color-blue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__service {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: $color-background;
+  }
+}
+//finish header//
+.attributes {
+  width: 1170px;
+  min-height: 251px;
+  display: flex;
+  box-sizing: content-box;
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    list-style: none;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+  }
+  &__wrapper {
+    display: flex;
+    width: 270px;
+    max-height: 120px;
+    background: $color-third-header-button;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  &__icons {
+    padding-left: 100px;
+  }
+  &__list-item {
+    width: 270px;
+  }
+  &__text {
+    text-transform: uppercase;
+    color: $color-almost-black;
+    line-height: 1.71;
+    font-weight: 700;
+    line-height: 1.46;
+  }
+  &__paragraph {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+}
+//finish atributes//
+.work {
+  width: 1170px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    width: 352px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-almost-black;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+}
+//start label//
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  top: 1445px;
+
+  &__phone {
+    left: 600px;
+  }
+  &__graphic {
+    left: 1000px;
+  }
+  &__aplication {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-background;
+    letter-spacing: 0.03em;
+    width: 190px;
+  }
+}
+//finish label//
+.our-team {
+  width: 1600px;
+  background: $color-third-header-button;
+  margin-left: -200px;
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    width: 210px;
+    padding-left: 480px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-almost-black;
+  }
+  &__list {
+    width: 1170px;
+    list-style: none;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 270px;
+    float: left;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: $color-background;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    gap: 30px;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $color-almost-black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__job {
+    width: 130px;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 30px;
+  }
+}
+.social-media {
+  width: 206px;
+  padding: 6px 0;
+  margin: 16px 32px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icons {
+    width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: $color-icons-social-media;
+
+    &:hover,
+    &:focus {
+      background-color: $color-blue;
+      fill: $color-background;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+//finish your team//
+.our-customers {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $color-almost-black;
+  }
+  &__list {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__logo {
+    fill: $color-icons-social-media;
+    width: 170px;
+    padding: 16px 0;
+    border: 1px solid $color-border-icons;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-blue;
+      fill: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.footer {
+  position: absolute;
+  width: 1600px;
+  background: $color-header-footer;
+  letter-spacing: 0.03em;
+  display: flex;
+
+  &__logo {
     width: 145px;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.38;
-    letter-spacing: 0.03em;
-    color: $color-black;
-    text-decoration: none;
-    font-family: $font-menu;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-.logo__web{
+    line-height: 1.19;
     color: $color-blue;
+    text-decoration: none;
+    margin-top: 60px;
+  }
+  &__logo-studio {
+    color: $color-background;
+  }
+  &__icons-media {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    width: 206px;
+    margin-top: 72px;
+  }
+  &__icons-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-background;
+  }
 }
-.navigation{
-    width: 254px;
-    margin-top: 32px;
-    margin-left: 93px;
-    
-    &__list{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    &__link{
-        float: left;
-        color: $color-almost-black;
-
-        &:focus,
-        &:hover,
-        &:active{
-            color: $color-blue;
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
-        &__link-agency{
-        width: 53px;
-        font-weight: 500;
-        text-decoration: none;
-    }
-        &__link-agency--active{
-        color: $color-blue;
-
-            &::after{
-                content: '';
-                position: absolute;
-                height: 4px;
-                width: 53px;
-                top: 76px;
-                left: 437px;
-                border-radius: 2px;
-                background-color: $color-blue;
-            }
-    }
-    &__link-portfolio{
-        padding-left: 46px;
-        text-decoration: none;
-    }
-    &__link-portfolio--active{
-        color: $color-blue;
-
-        &::after{
-            content: '';
-            position: absolute;
-            height: 4px;
-            width: 53px;
-            top: 76px;
-            left: 537px;
-            background: var(--color-blue);
-            border-radius: 2px;
-        }
-    }
-    &__link-contact{
-        padding-left: 46px;
-        width: 51px;
-        text-decoration: none;
-    }
+.social-media {
+  margin: 20px 0 0 0;
+  &__icons--color {
+    background: rgba(255, 255, 255, 0.1);
+    fill: $color-background;
+  }
 }
-//finish menu//
+.address {
+  margin-top: 20px;
+
+  &__list {
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__item {
+    line-height: 1.71;
+    font-weight: 400;
+    font-style: normal;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-addres-item-focus;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__link {
+    color: $color-background;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+}
+.signup-form {
+  display: flex;
+  margin-left: 78px;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    color: $color-background;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  &__input {
+    min-width: 378px;
+    min-height: 50px;
+    margin-top: 20px;
+    background-color: $color-header-footer;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &__button {
+    margin: 108px 215px 94px 12px;
+    min-height: 50px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $color-background;
+    fill: $color-background;
+    border: none;
+    cursor: pointer;
+  }
+  &__icon{
+    margin-left: 24px;
+  }
+}
+//finish footer//
