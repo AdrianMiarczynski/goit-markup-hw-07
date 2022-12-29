@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Hw2-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +22,14 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
-              <a class="navigation__link navigation__link-agency" href="./index.html">Agencja</a>
+              <a
+                class="navigation__link navigation__link-agency"
+                href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a
-                class="navigation__link navigation__link-portfolio navigation__link-portfolio--active"
-                href="portfolio.html"
+              <a class="navigation__link navigation__link-portfolio navigation__link-portfolio--active" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -35,14 +37,14 @@
           </ul>
         </nav>
 
-        <a class="menu_email" href="mailto:info@devstudio.com"
-          ><svg class="menu_icon-envelope" width="16" weight="12">
+        <a class="menu__email" href="mailto:info@devstudio.com"
+          ><svg class="menu__icon-envelope" width="16" weight="12">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
-        <a class="menu_telephone" href="tel:++48111111111">
-          <svg class="menu_icon-smartphone" width="10" weight="16">
+        <a class="menu__telephone" href="tel:++48111111111">
+          <svg class="menu__icon-smartphone" width="10" weight="16">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
           +48 111 111 111</a
@@ -55,21 +57,21 @@
         <section class="portfolio-page section">
           <ul class="portfolio-page__filters">
             <li class="portfolio-page__item">
-              <button class="filters__button filters__button--is-active" type="button">
+              <button class="portfolio-page__button portfolio-page__button--is-active" type="button">
                 Wszystkie
               </button>
             </li>
             <li class="portfolio-page__item">
-              <button class="filters__button" type="button">Strony</button>
+              <button class="portfolio-page__button" type="button">Strony</button>
             </li>
             <li class="portfolio-page__item">
-              <button class="filters__button" type="button">Aplikacjie</button>
+              <button class="portfolio-page__button" type="button">Aplikacjie</button>
             </li>
             <li class="portfolio-page__item">
-              <button class="filters__button" type="button">Dizajn</button>
+              <button class="portfolio-page__button" type="button">Dizajn</button>
             </li>
             <li class="portfolio-page__item">
-              <button class="filters__button" type="button">Marketing</button>
+              <button class="portfolio-page__button" type="button">Marketing</button>
             </li>
           </ul>
           <div class="main-box">
