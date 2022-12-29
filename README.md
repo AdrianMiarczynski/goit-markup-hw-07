@@ -1,4 +1,4 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
 https://github.com/AdrianMiarczynski/goit-markup-hw-07
 <br/>
