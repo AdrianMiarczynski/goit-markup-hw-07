@@ -1,8 +1,26 @@
 @use './utils/vars' as *;
+@import './components/menu';
 @import './components/navigation';
+@import './components/header-top';
+@import './components/atributes';
+@import './components/work';
+@import './components/label';
+@import './components/our-team';
+@import './components/social-media';
+@import './components/our-coustomers';
+@import './components/footer';
+@import './components/address';
+@import './components/signap-form';
+@import './components/portfolio-page';
+@import './components/main-box';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/checkbox-agreement';
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   position: relative;
@@ -18,43 +36,6 @@ body {
   line-height: 1.14;
   display: flex;
   border-bottom: 1px solid $color-border-menu;
-
-  &__email {
-    width: 161px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-left: 345px;
-    color: $color-grey;
-
-    &:hover,
-    &:focus {
-      color: $color-blue;
-      fill: $color-blue;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__icon-envelope {
-    margin-right: 10px;
-  }
-  &__telephone {
-    width: 130px;
-    color: $color-grey;
-    text-decoration: none;
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-
-    &:hover,
-    &:focus {
-      color: $color-blue;
-      fill: $color-blue;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__icon-smartphone {
-    margin-right: 10px;
-  }
 }
 .container {
   max-width: 1200px;
@@ -87,65 +68,6 @@ body {
   width: 254px;
   margin-top: 32px;
   margin-left: 93px;
-
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  &__link {
-    float: left;
-    color: $color-almost-black;
-
-    &:focus,
-    &:hover,
-    &:active {
-      color: $color-blue;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__link-agency {
-    width: 53px;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  &__link-agency--active {
-    color: $color-blue;
-
-    &::after {
-      content: '';
-      position: absolute;
-      height: 4px;
-      width: 53px;
-      top: 76px;
-      left: 437px;
-      border-radius: 2px;
-      background-color: $color-blue;
-    }
-  }
-  &__link-portfolio {
-    padding-left: 46px;
-    text-decoration: none;
-  }
-  &__link-portfolio--active {
-    color: $color-blue;
-
-    &::after {
-      content: '';
-      position: absolute;
-      height: 4px;
-      width: 53px;
-      top: 76px;
-      left: 537px;
-      background: $color-blue;
-      border-radius: 2px;
-    }
-  }
-  &__link-contact {
-    padding-left: 46px;
-    width: 51px;
-    text-decoration: none;
-  }
 }
 //finish menu//
 .section {
@@ -166,36 +88,6 @@ body {
   align-items: center;
   padding-top: 106px;
   padding-bottom: 116px;
-
-  &__main-header {
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-transform: uppercase;
-    color: $color-background;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-  }
-
-  &__button {
-    width: 200px;
-    padding: 10px 0;
-    background: $color-blue;
-    box-shadow: 0px 4px 4px $color-button-box-shadow;
-    border: $color-blue;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  &__service {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: $color-background;
-  }
 }
 //finish header//
 .attributes {
@@ -204,42 +96,6 @@ body {
   display: flex;
   box-sizing: content-box;
   padding-bottom: 0;
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-    list-style: none;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-  }
-  &__wrapper {
-    display: flex;
-    width: 270px;
-    max-height: 120px;
-    background: $color-third-header-button;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    justify-content: center;
-  }
-  &__icons {
-    padding-left: 100px;
-  }
-  &__list-item {
-    width: 270px;
-  }
-  &__text {
-    text-transform: uppercase;
-    color: $color-almost-black;
-    line-height: 1.71;
-    font-weight: 700;
-    line-height: 1.46;
-  }
-  &__paragraph {
-    padding-top: 10px;
-    margin-bottom: 0;
-  }
 }
 //finish atributes//
 .work {
@@ -249,25 +105,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__title {
-    width: 352px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    white-space: nowrap;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $color-almost-black;
-    display: flex;
-    margin-bottom: 50px;
-  }
-  &__list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 30px;
-  }
 }
 //start label//
 .label {
@@ -280,24 +117,6 @@ body {
   align-items: center;
   white-space: nowrap;
   top: 1445px;
-
-  &__phone {
-    left: 600px;
-  }
-  &__graphic {
-    left: 1000px;
-  }
-  &__aplication {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    text-align: center;
-    color: $color-background;
-    letter-spacing: 0.03em;
-    width: 190px;
-  }
 }
 //finish label//
 .our-team {
@@ -306,50 +125,6 @@ body {
   margin-left: -200px;
   display: flex;
   justify-content: center;
-
-  &__title {
-    width: 210px;
-    padding-left: 480px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    white-space: nowrap;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $color-almost-black;
-  }
-  &__list {
-    width: 1170px;
-    list-style: none;
-    margin-top: 50px;
-    display: flex;
-    gap: 30px;
-  }
-  &__item {
-    width: 270px;
-    float: left;
-    text-align: center;
-    letter-spacing: 0.03em;
-    background: $color-background;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    gap: 30px;
-  }
-  &__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    color: $color-almost-black;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  &__job {
-    width: 130px;
-    font-size: 16px;
-    line-height: 1.19;
-    margin-bottom: 30px;
-  }
 }
 .social-media {
   width: 206px;
@@ -358,56 +133,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &__icons {
-    width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    fill: $color-icons-social-media;
-
-    &:hover,
-    &:focus {
-      background-color: $color-blue;
-      fill: $color-background;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
 }
 //finish your team//
 .our-customers {
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: $color-almost-black;
-  }
-  &__list {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-between;
-    list-style: none;
-  }
-  &__logo {
-    fill: $color-icons-social-media;
-    width: 170px;
-    padding: 16px 0;
-    border: 1px solid $color-border-icons;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover,
-    &:focus {
-      border: 1px solid $color-blue;
-      fill: $color-blue;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
+  box-sizing: border-box;
 }
 .footer {
   position: absolute;
@@ -415,35 +144,8 @@ body {
   background: $color-header-footer;
   letter-spacing: 0.03em;
   display: flex;
-
-  &__logo {
-    width: 145px;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: $color-blue;
-    text-decoration: none;
-  }
-  &__logo-studio {
-    color: $color-background;
-  }
-  &__icons-media {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    width: 206px;
-    margin-top: 72px;
-  }
-  &__icons-header {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $color-background;
-  }
 }
-.social-media {
+.social-media--footer {
   margin: 20px 0 0 0;
   &__icons--color {
     background: rgba(255, 255, 255, 0.1);
@@ -452,85 +154,10 @@ body {
 }
 .address {
   margin-top: 20px;
-
-  &__list {
-    list-style: none;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-  }
-
-  &__item {
-    line-height: 1.71;
-    font-weight: 400;
-    font-style: normal;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color-addres-item-focus;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__link {
-    color: $color-background;
-    white-space: nowrap;
-    text-decoration: none;
-  }
 }
 .signup-form {
   display: flex;
   margin-left: 78px;
-
-  &__label {
-    display: flex;
-    flex-direction: column;
-    margin-top: 72px;
-    color: $color-background;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-  &__input {
-    min-width: 378px;
-    min-height: 50px;
-    margin-top: 20px;
-    background-color: $color-header-footer;
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    padding: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-  &__button {
-    margin: 108px 215px 94px 12px;
-    min-height: 50px;
-    min-width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-blue;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: $color-background;
-    fill: $color-background;
-    border: none;
-    cursor: pointer;
-  }
-  &__icon {
-    margin-left: 24px;
-  }
 }
 //finish footer//
 .portfolio-page {
@@ -538,121 +165,9 @@ body {
   width: 1170px;
   background: $color-background;
   color: $color-almost-black;
-
-  &__filters {
-    display: flex;
-    margin-left: 295px;
-    width: 572px;
-    text-align: center;
-    justify-content: space-between;
-  }
-  &__item {
-    list-style: none;
-    text-align: center;
-    font-size: 1.62em;
-  }
-  &__button {
-    background-color: $color-third-header-button;
-    border: none;
-    border-radius: 4px;
-    width: 108px;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    padding: 6px;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-blue;
-      color: $color-background;
-      cursor: pointer;
-      border: none;
-      border-radius: 4px;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
 }
 .main-box {
-  &__list {
-    display: flex;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 50px;
-    margin: 0;
-    min-width: 1200px;
-    padding-left: 15px;
-  }
-  &__item {
-    list-style: none;
-    border: 1px solid $color-third-header-button;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__hidden-label {
-    margin: 0;
-    max-height: 404px;
-    position: relative;
-    overflow: hidden;
-  }
-  &__box-img:hover &__label {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  &__label {
-    position: absolute;
-    top: 0;
-    min-width: 370px;
-    height: 294px;
-    background-color: #2196f3;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__paragraph {
-    position: absolute;
-    top: 49px;
-    left: 24px;
-    width: 301px;
-    height: 196px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: $color-background;
-  }
-  .box-img {
-    &__details {
-      position: relative;
-      width: 322px;
-      letter-spacing: 0.06em;
-      padding: 20px 24px;
-      box-sizing: content-box;
-    }
-    &__title {
-      position: relative;
-      width: 322px;
-      font-size: 18px;
-      line-height: 2;
-    }
-    &__data {
-      position: relative;
-      color: var(--color-grey);
-      padding-top: 4px;
-      font-size: 16px;
-      line-height: 1.88;
-      width: 322px;
-    }
-  }
+  display: flex;
 }
 //backdrop//
 .backdrop {
@@ -675,28 +190,6 @@ body {
   background-color: $color-background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  &__close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--color-background);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  &__data-form {
-    margin: 40px 40px 12px;
-    font-size: 20px;
-    font-weight: 1.15;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    font-weight: 700;
-    color: $color-almost-black;
-    text-align: center;
-  }
 }
 .is-hidden {
   opacity: 0;
@@ -709,79 +202,6 @@ body {
   flex-direction: column;
   margin: 0px 40px 20px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &__input {
-    min-width: 448px;
-    color: $color-almost-black;
-    border: 1px solid $color-modal-input;
-    border-radius: 4px;
-    min-height: 40px;
-    margin-bottom: 10px;
-    display: flex;
-    position: relative;
-    padding-left: 42px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:active,
-    &:hover {
-      border: 1px solid $color-blue;
-      outline: none;
-    }
-  }
-  &__label {
-    position: relative;
-
-    &:focus-within,
-    &:focus,
-    &:hover,
-    &:active {
-      fill: $color-blue;
-    }
-  }
-  &__icon {
-    position: absolute;
-    left: 12px;
-    top: 30px;
-    justify-content: center;
-    text-align: center;
-  }
-  &__text-area {
-    margin-bottom: 20px;
-    resize: none;
-    min-width: 100%;
-    min-height: 120px;
-    color: $color-almost-black;
-    border: 1px solid $color-modal-input;
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    font-weight: 400;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:active,
-    &:focus {
-      border: 1px solid $color-blue;
-      outline: none;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-  &__button {
-    min-height: 50px;
-    min-width: 200px;
-    margin: 30px 124px 40px;
-    background: $color-blue;
-    box-shadow: 0px 4px 4px $color-button-box-shadow;
-    border-radius: 4px;
-    border: none;
-    color: $color-background;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-  }
 }
 .checkbox-agreement {
   display: flex;
@@ -789,46 +209,4 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-
-  &__border-checkbox {
-    top: 0px;
-    left: -21px;
-    height: 15px;
-    width: 16px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    border: 1px solid $color-black;
-    border-radius: 2px;
-  }
-  &__icon {
-    opacity: 0;
-    min-height: 15px;
-    min-width: 16px;
-  }
-  &__label {
-    position: relative;
-    cursor: pointer;
-  }
-  &__input {
-    min-width: 15px;
-    min-height: 15px;
-    max-width: 1px;
-    margin-right: 8px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-  }
-  &__input:checked + &__label > &__border-checkbox {
-    fill: $color-background;
-    background-color: $color-blue;
-    border-color: $color-blue;
-    opacity: 1;
-  }
-  &__input:checked + &__label > &__border-checkbox &__icon {
-    opacity: 1;
-  }
-  &__link {
-    color: $color-blue;
-  }
 }

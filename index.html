@@ -128,7 +128,9 @@
                 width="370"
                 height="294"
               />
-              <div class="label label__computer"><p class="label__aplication">Aplikacjie komputerowe</p></div>
+              <div class="label label__computer">
+                <p class="label__aplication">Aplikacjie komputerowe</p>
+              </div>
             </li>
             <li class="work__item">
               <img
@@ -138,7 +140,9 @@
                 width="370"
                 height="294"
               />
-              <div class="label label__phone"><p class="label__aplication">Aplikacjie mobilne</p></div>
+              <div class="label label__phone">
+                <p class="label__aplication">Aplikacjie mobilne</p>
+              </div>
             </li>
             <li class="work__item">
               <img
@@ -148,7 +152,9 @@
                 width="370"
                 height="294"
               />
-              <div class="label label__graphic"><p class="label__aplication">rozwiązania graficzne</p></div>
+              <div class="label label__graphic">
+                <p class="label__aplication">rozwiązania graficzne</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -342,7 +348,7 @@
       </div>
       <div class="footer__icons-media">
         <h3 class="footer__icons-header">Dołącz do nas</h3>
-        <div class="social-media">
+        <div class="social-media social-media--footer">
           <a href="#" class="social-media__icons social-media__icons--color" target="blank">
             <svg width="20px" height="20px">
               <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -386,14 +392,14 @@
       </form>
     </footer>
     <!--modal window-->
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>X</button>
         <p class="modal__data-form">Zostaw swoje dane w formularzu poniżej</p>
         <form class="modal-form" action="modal-form" autocomplete="off" novalidate>
           <label class="modal-form__label" for="user-name"
             >Imie
-            <input type="text" name="name" class="modal-form__input" id="user-name"/>
+            <input type="text" name="name" class="modal-form__input" id="user-name" />
             <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
@@ -423,7 +429,12 @@
           </label>
 
           <div class="checkbox-agreement">
-            <input type="checkbox" name="agreement" id="agreement" class="checkbox-agreement__input"/>
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              class="checkbox-agreement__input"
+            />
             <label for="agreement" class="checkbox-agreement__label" class="container-label">
               <span class="checkbox-agreement__border-checkbox">
                 <svg class="checkbox-agreement__icon" width="16" height="15">
@@ -431,7 +442,8 @@
                 </svg>
               </span>
               Oświadczam iż akceptuję
-              <a class="checkbox-agreement__link" href="#">Regulamin</a> i <a class="checkbox-agreement__link" href="#">Politykę Prywatności.</a>
+              <a class="checkbox-agreement__link" href="#">Regulamin</a> i
+              <a class="checkbox-agreement__link" href="#">Politykę Prywatności.</a>
             </label>
           </div>
 
